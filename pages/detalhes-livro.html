@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalhes do Livro | BookShelf</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU LATERAL
+    ========================== -->
+
+    <aside class="menu-lateral">
+
+        <div class="logo">
+            <h2>📚 BOOKSHELF</h2>
+            <p>Biblioteca Inteligente</p>
+        </div>
+
+        <nav>
+            <a href="../index.html">Início</a>
+
+            <a
+                href="livros.html"
+                class="ativo"
+            >
+                Livros
+            </a>
+
+            <a href="#">Pesquisa</a>
+
+            <a href="emprestimos.html">
+                Empréstimos
+            </a>
+
+            <a href="#">Estantes</a>
+
+            <a href="#">Relatórios</a>
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main class="conteudo">
+
+        <!-- CABEÇALHO -->
+
+        <header class="topo">
+
+            <div>
+                <h1>Detalhes do Livro</h1>
+
+                <p>
+                    Informações completas do livro selecionado.
+                </p>
+            </div>
+
+            <a
+                href="livros.html"
+                class="botao-voltar"
+            >
+                ← Voltar
+            </a>
+
+        </header>
+
+
+        <!-- =========================
+             DETALHES
+        ========================== -->
+
+        <section class="detalhes-container">
+
+            <!-- CAPA -->
+
+            <div class="detalhes-capa">
+                📚
+            </div>
+
+
+            <!-- INFORMAÇÕES -->
+
+            <div class="detalhes-info">
+
+                <!-- STATUS -->
+
+                <span
+                    id="detalhe-status"
+                    class="status"
+                >
+                </span>
+
+
+                <!-- TÍTULO -->
+
+                <h2 id="detalhe-titulo">
+                    Carregando...
+                </h2>
+
+
+                <!-- AUTOR -->
+
+                <p class="autor-detalhe">
+
+                    <strong>
+                        Autor:
+                    </strong>
+
+                    <span id="detalhe-autor">
+                    </span>
+
+                </p>
+
+
+                <!-- GÊNERO -->
+
+                <p>
+
+                    <strong>
+                        Gênero:
+                    </strong>
+
+                    <span id="detalhe-genero">
+                    </span>
+
+                </p>
+
+
+                <!-- LOCALIZAÇÃO -->
+
+                <div class="localizacao-detalhe">
+
+                    <div>
+
+                        <small>
+                            Estante
+                        </small>
+
+                        <strong id="detalhe-estante">
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            Prateleira
+                        </small>
+
+                        <strong id="detalhe-prateleira">
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            Código
+                        </small>
+
+                        <strong id="detalhe-id">
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DESCRIÇÃO -->
+
+                <div class="sinopse">
+
+                    <h3>
+                        Descrição
+                    </h3>
+
+                    <p id="detalhe-descricao">
+
+                        Livro utilizado no protótipo
+                        do sistema BookShelf.
+
+                    </p>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+
+                <a
+                    id="botao-emprestimo"
+                    class="botao-principal"
+                    href="#"
+                >
+                    Registrar empréstimo
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../js/detalhes-livro.js"></script>
+
+</body>
+
+</html>

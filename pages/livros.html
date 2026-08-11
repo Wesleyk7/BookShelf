@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Livros | BookShelf</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU LATERAL
+    ========================== -->
+
+    <aside class="menu-lateral">
+
+        <div class="logo">
+            <h2>📚 BOOKSHELF</h2>
+            <p>Biblioteca Inteligente</p>
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                Início
+            </a>
+
+            <a
+                href="livros.html"
+                class="ativo"
+            >
+                Livros
+            </a>
+
+            <a href="#">
+                Pesquisa
+            </a>
+
+            <a href="emprestimos.html">
+                Empréstimos
+            </a>
+
+            <a href="#">
+                Estantes
+            </a>
+
+            <a href="#">
+                Relatórios
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main class="conteudo">
+
+        <!-- CABEÇALHO -->
+
+        <header class="topo">
+
+            <div>
+
+                <h1>
+                    Livros
+                </h1>
+
+                <p>
+                    Gerencie e consulte todos os livros cadastrados.
+                </p>
+
+            </div>
+
+            <button
+                class="botao-principal"
+                type="button"
+            >
+                + Adicionar livro
+            </button>
+
+        </header>
+
+
+        <!-- =========================
+             FILTROS
+        ========================== -->
+
+        <section class="barra-filtros">
+
+            <!-- PESQUISA -->
+
+            <input
+                type="text"
+                id="pesquisa-livro"
+                placeholder="Pesquisar por título ou autor..."
+            >
+
+
+            <!-- GÊNERO -->
+
+            <select id="filtro-genero">
+
+                <option value="">
+                    Todos os gêneros
+                </option>
+
+                <option value="Fantasia">
+                    Fantasia
+                </option>
+
+                <option value="Romance">
+                    Romance
+                </option>
+
+                <option value="Tecnologia">
+                    Tecnologia
+                </option>
+
+                <option value="História">
+                    História
+                </option>
+
+                <option value="Administração">
+                    Administração
+                </option>
+
+            </select>
+
+
+            <!-- STATUS -->
+
+            <select id="filtro-status">
+
+                <option value="">
+                    Todos os status
+                </option>
+
+                <option value="Disponível">
+                    Disponível
+                </option>
+
+                <option value="Emprestado">
+                    Emprestado
+                </option>
+
+                <option value="Atrasado">
+                    Atrasado
+                </option>
+
+                <option value="Atenção">
+                    Atenção
+                </option>
+
+                <option value="Reabastecer">
+                    Reabastecer
+                </option>
+
+                <option value="Saída">
+                    Saída
+                </option>
+
+                <option value="Erro">
+                    Erro
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- =========================
+             LISTA DE LIVROS
+        ========================== -->
+
+        <section
+            class="grade-livros"
+            id="lista-livros"
+        >
+
+            <!--
+                O JavaScript cria
+                automaticamente os cards aqui.
+            -->
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../js/livros.js"></script>
+
+</body>
+
+</html>

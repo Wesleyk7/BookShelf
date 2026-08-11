@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Empréstimos | BookShelf</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU LATERAL
+    ========================== -->
+
+    <aside class="menu-lateral">
+
+        <div class="logo">
+            <h2>📚 BOOKSHELF</h2>
+            <p>Biblioteca Inteligente</p>
+        </div>
+
+        <nav>
+
+            <a href="../index.html">
+                Início
+            </a>
+
+            <a href="livros.html">
+                Livros
+            </a>
+
+            <a href="#">
+                Pesquisa
+            </a>
+
+            <a
+                href="emprestimos.html"
+                class="ativo"
+            >
+                Empréstimos
+            </a>
+
+            <a href="#">
+                Estantes
+            </a>
+
+            <a href="#">
+                Relatórios
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main class="conteudo">
+
+        <!-- CABEÇALHO -->
+
+        <header class="topo">
+
+            <div>
+
+                <h1>
+                    Empréstimos
+                </h1>
+
+                <p>
+                    Acompanhe retiradas,
+                    devoluções e atrasos.
+                </p>
+
+            </div>
+
+
+            <a
+                href="livros.html"
+                class="botao-principal"
+            >
+                + Novo empréstimo
+            </a>
+
+        </header>
+
+
+        <!-- =========================
+             RESUMO
+        ========================== -->
+
+        <section class="cards cards-dashboard">
+
+            <!-- ATIVOS -->
+
+            <div class="card">
+
+                <p>
+                    Empréstimos ativos
+                </p>
+
+                <div class="valor-card">
+
+                    <h2 id="emprestimos-ativos">
+                        0
+                    </h2>
+
+                    <span>
+                        📖
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ATRASADOS -->
+
+            <div class="card">
+
+                <p>
+                    Atrasados
+                </p>
+
+                <div class="valor-card">
+
+                    <h2 id="emprestimos-atrasados">
+                        0
+                    </h2>
+
+                    <span>
+                        ⏰
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DEVOLVIDOS -->
+
+            <div class="card">
+
+                <p>
+                    Devolvidos
+                </p>
+
+                <div class="valor-card">
+
+                    <h2 id="emprestimos-devolvidos">
+                        0
+                    </h2>
+
+                    <span>
+                        ✅
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LISTA DE EMPRÉSTIMOS
+        ========================== -->
+
+        <section class="secao">
+
+            <div class="titulo-secao">
+
+                <h2>
+                    Lista de empréstimos
+                </h2>
+
+            </div>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Livro
+                        </th>
+
+                        <th>
+                            Responsável
+                        </th>
+
+                        <th>
+                            Retirada
+                        </th>
+
+                        <th>
+                            Previsão
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Ações
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="lista-emprestimos">
+
+                    <!--
+                        JavaScript coloca
+                        os empréstimos aqui
+                    -->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../js/emprestimos.js"></script>
+
+</body>
+
+</html>

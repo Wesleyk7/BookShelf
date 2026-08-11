@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookShelf</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU LATERAL
+    ========================== -->
+
+    <aside class="menu-lateral">
+
+        <div class="logo">
+            <h2>📚 BOOKSHELF</h2>
+            <p>Biblioteca Inteligente</p>
+        </div>
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="ativo"
+            >
+                Início
+            </a>
+
+            <a href="pages/livros.html">
+                Livros
+            </a>
+
+            <a href="#">
+                Pesquisa
+            </a>
+
+            <a href="pages/emprestimos.html">
+                Empréstimos
+            </a>
+
+            <a href="#">
+                Estantes
+            </a>
+
+            <a href="#">
+                Relatórios
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main class="conteudo">
+
+        <!-- =========================
+             CABEÇALHO
+        ========================== -->
+
+        <header class="topo">
+
+            <div>
+
+                <h1>
+                    Olá, Administrador!
+                </h1>
+
+                <p>
+                    Visão geral da sua biblioteca.
+                </p>
+
+            </div>
+
+
+            <div class="usuario">
+
+                <span>
+                    🔔
+                </span>
+
+                <div>
+
+                    <strong>
+                        Administrador
+                    </strong>
+
+                    <p>
+                        BookShelf
+                    </p>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             CARDS DO DASHBOARD
+        ========================== -->
+
+        <section class="cards cards-dashboard">
+
+            <!-- TOTAL -->
+
+            <div class="card">
+
+                <p>
+                    Total de livros
+                </p>
+
+                <div class="valor-card">
+
+                    <h2 id="total-livros">
+                        0
+                    </h2>
+
+                    <span>
+                        📚
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMPRESTADOS -->
+
+            <div class="card">
+
+                <p>
+                    Livros emprestados
+                </p>
+
+                <div class="valor-card">
+
+                    <h2 id="total-emprestados">
+                        0
+                    </h2>
+
+                    <span>
+                        📖
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PENDENTES -->
+
+            <div class="card">
+
+                <p>
+                    Devoluções pendentes
+                </p>
+
+                <div class="valor-card">
+
+                    <h2 id="total-pendentes">
+                        0
+                    </h2>
+
+                    <span>
+                        ⏰
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DISPONÍVEIS -->
+
+            <div class="card">
+
+                <p>
+                    Disponíveis
+                </p>
+
+                <div class="valor-card">
+
+                    <h2 id="total-disponiveis">
+                        0
+                    </h2>
+
+                    <span>
+                        ✅
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTEÚDO DO DASHBOARD
+        ========================== -->
+
+        <section class="dashboard-grid">
+
+            <!-- =========================
+                 COLUNA ESQUERDA
+            ========================== -->
+
+            <div>
+
+                <!-- AÇÕES RÁPIDAS -->
+
+                <section class="secao">
+
+                    <div class="titulo-secao">
+
+                        <h2>
+                            Ações rápidas
+                        </h2>
+
+                    </div>
+
+
+                    <div class="acoes">
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='pages/livros.html'"
+                        >
+                            🔍
+
+                            <span>
+                                Pesquisar livro
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='pages/livros.html'"
+                        >
+                            ➕
+
+                            <span>
+                                Novo livro
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                            onclick="window.location.href='pages/livros.html'"
+                        >
+                            📖
+
+                            <span>
+                                Novo empréstimo
+                            </span>
+                        </button>
+
+
+                        <button
+                            type="button"
+                        >
+                            🗄️
+
+                            <span>
+                                Ver estantes
+                            </span>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- EMPRÉSTIMOS RECENTES -->
+
+                <section class="secao tabela-dashboard">
+
+                    <div class="titulo-secao">
+
+                        <h2>
+                            Empréstimos recentes
+                        </h2>
+
+                        <a href="pages/emprestimos.html">
+                            Ver todos
+                        </a>
+
+                    </div>
+
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Livro
+                                </th>
+
+                                <th>
+                                    Responsável
+                                </th>
+
+                                <th>
+                                    Devolução
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="dashboard-emprestimos">
+
+                            <!--
+                                O dashboard.js
+                                vai preencher aqui.
+                            -->
+
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+            </div>
+
+
+            <!-- =========================
+                 COLUNA DIREITA
+            ========================== -->
+
+            <aside class="painel-notificacoes">
+
+                <div class="titulo-secao">
+
+                    <h2>
+                        Notificações
+                    </h2>
+
+                </div>
+
+
+                <div id="dashboard-notificacoes">
+
+                    <!--
+                        O JavaScript
+                        colocará notificações aqui.
+                    -->
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/script.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
