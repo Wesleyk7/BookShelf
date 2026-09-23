@@ -1,3 +1,6 @@
+<img width="1672" height="941" alt="bookshelf" src="https://github.com/user-attachments/assets/017426fb-5d3b-4f79-bf12-3e0d87c084f5" />
+
+
 # 📚 BookShelf
 
 Sistema de gerenciamento de biblioteca desenvolvido para organizar livros, empréstimos e devoluções de forma simples e prática.
